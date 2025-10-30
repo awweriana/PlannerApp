@@ -1,6 +1,11 @@
 package model;
 
+import java.time.LocalDateTime;
+
 public class FinanceRecord {
+
+    private int id;
+    private LocalDateTime date;
     private String description;
     private double amount;
 

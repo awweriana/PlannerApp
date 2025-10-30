@@ -5,6 +5,8 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class DaySchedule {
+
+    private int id;
     private String dayName;        // день недели
     private LocalDate date;        // дата
     private List<String> lessons;  // список уроков пар

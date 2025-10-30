@@ -1,8 +1,7 @@
 package gui;
 
 import model.DaySchedule;
-import model.FinanceRecord;
-import service.ScheduleService;
+import service.impl.ScheduleServiceImpl;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,7 +18,7 @@ public class SchedulePanel extends JPanel {
     private Map<String, JPanel> dayPanels;
     private Map<String, List<JTextField>> dayFields;
     private JButton saveButton;
-    private final ScheduleService scheduleService = new ScheduleService();// для сохранения в БД
+    private final ScheduleServiceImpl scheduleService = new ScheduleServiceImpl();// для сохранения в БД
 
     public SchedulePanel() {
 

@@ -1,8 +1,7 @@
 package gui;
 
-import model.DaySchedule;
 import model.Task;
-import service.PlannerService;
+import service.impl.PlannerServiceImpl;
 import controller.PlannerController;
 
 import javax.swing.*;
@@ -18,7 +17,7 @@ public class PlannerPanel extends JPanel {
     String[] days = {"Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс", "План на день"};
     private PlannerController controller;
     private Map<String, JPanel> dayPanels;
-    private final PlannerService plannerService = new PlannerService();
+    private final PlannerServiceImpl plannerService = new PlannerServiceImpl();
     private int id;
 
     public PlannerPanel() {

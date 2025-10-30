@@ -1,7 +1,7 @@
 package gui;
 
 import model.WishItem;
-import service.WishListService;
+import service.impl.WishListServiceImpl;
 
 import javax.swing.*;
 import java.awt.*;
@@ -22,7 +22,7 @@ public class WishlistPanel extends JPanel {
         private double price;// переменная цены
         private ImageIcon photoIcon = null;// фото вещи
         private List<WishItem> wishList;// список всех вещей
-        private final WishListService wishListService = new WishListService();
+        private final WishListServiceImpl wishListService = new WishListServiceImpl();
         private String path;// ссылка на изображение
 
         public WishlistPanel() {

@@ -1,6 +1,7 @@
-package service;
+package service.impl;
 
 import model.DaySchedule;
+import service.SchedleService;
 import utils.DBHelper;
 
 import java.sql.*;
@@ -9,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ScheduleService {
+public class ScheduleServiceImpl implements SchedleService {
 
     public void saveSchedule(DaySchedule schedule) {
         String sql = "INSERT INTO DaySchedule (day_name, date, lessons) VALUES (?, ?, ?)";

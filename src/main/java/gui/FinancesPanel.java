@@ -1,23 +1,21 @@
 package gui;
 
 import model.FinanceRecord;
-import service.FinanceService;
-import utils.DBHelper;
+import service.impl.FinanceServiceImpl;
 
 import javax.swing.*;
 import java.awt.*;
 import javax.swing.JTextArea;
-import java.sql.Connection;
 import java.util.List;
 
 public class FinancesPanel extends JPanel {
 
-    private FinanceService financeService;
+    private FinanceServiceImpl financeService;
     private JLabel balanceLabel;
 
     public FinancesPanel() {
 
-        this.financeService = new FinanceService();
+        this.financeService = new FinanceServiceImpl();
 
         setLayout(new BorderLayout());
 

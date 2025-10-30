@@ -3,6 +3,7 @@ package gui;
 import model.Birthday;
 import model.Reminder;
 import service.BirthdayService;
+import service.impl.BirthdayServiceImpl;
 
 import javax.swing.*;
 import java.awt.*;
@@ -21,7 +22,7 @@ public class BirthdayPanel extends JPanel {
     private JTextField nameField;// поле ввода имени
     private JButton addButton, removeButton;
     private DatePicker datePicker; // компонент даты
-    private final BirthdayService birthdayService = new BirthdayService();
+    private final BirthdayService birthdayService = new BirthdayServiceImpl();
 
     public BirthdayPanel() {
         setLayout(new BorderLayout());// устанавливаем менеджер компоновки

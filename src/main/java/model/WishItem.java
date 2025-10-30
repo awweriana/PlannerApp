@@ -4,6 +4,7 @@ import javax.swing.*;
 
 public class WishItem {
 
+        private int id;
         private String itemName;
         private double price;
         private ImageIcon photoIcon;
